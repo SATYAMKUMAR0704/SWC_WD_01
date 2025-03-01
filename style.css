@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    text-align: center;
+}
+
+/* Navigation bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    transition: background 0.3s;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+/* Scroll effect */
+.scrolled {
+    background: #333;
+}
+
+/* Sections */
+header, section {
+    padding: 100px;
+    margin-top: 50px;
+}
+
+header {
+    background: #ff6f61;
+    color: white;
+}
+
+section {
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Initial state for sections (hidden by default) */
+    /* Initial state for sections (hidden by default) */
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* When section is in view */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* When section is in view */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+}
+
+#about {
+    background: #ffcc29;
+}
+
+#services {
+    background: #4caf50;
+    color: white;
+}
+
+#contact {
+    background: #2196f3;
+    color: white;
+}
